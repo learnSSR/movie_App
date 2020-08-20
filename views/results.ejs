@@ -1,0 +1,22 @@
+<h1> This is results Page</h1>
+
+
+ <%  for (var i = 0;i< data["Search"].length; i++){ %> 
+   <li style="padding: 23x 23x 23x 23x"> 
+
+   <strong><%= data["Search"][i]["Title"] %> </strong>	
+
+   	- 
+
+   	<%= data["Search"][i]["Year"]%>
+
+    </li>
+<% } %>
+
+
+<form action="/results" method="GET">
+	
+	<input type="text" name="search" placeholder="name">
+	<input type="submit">
+
+</form>
